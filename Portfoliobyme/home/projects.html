@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemant Raghuwanshi - Projects</title>
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="home.css"> <!-- Ensure home.css for navbar and footer styling -->
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Hemant Raghuwanshi</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="social.html">Social Media</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+          <h3>Movie Streaming Website</h3>
+          <p>Streaming live trailers of any movie across the Internet.</p>
+          <div class="project-images">
+            <img src="Images/m1.png" alt="Project 1 Image 1" class="project-image" onclick="openModal('Images/m1.png')">
+            <img src="Images/m2.png" alt="Project 1 Image 2" class="project-image" onclick="openModal('Images/m2.png')">
+            <img src="Images/m3.png" alt="Project 1 Image 3" class="project-image" onclick="openModal('Images/m3.png')">
+            <img src="Images/m4.png" alt="Project 1 Image 4" class="project-image" onclick="openModal('Images/m4.png')">
+          </div>
+          <p><strong>Deployed Link:</strong> <a href="https://cinemania-six.vercel.app/" target="_blank">Movie Streaming Website</a></p>
+        </div>
+
+       
+          <div class="project-item">
+            <h3>Photo Gallery</h3>
+            <p>Made a Photo Gallery using html and css , used animations to make it look more attractive.</p>
+            <div class="project-images">
+              <img src="Images/i1.png" alt="Project 2 Image 1" class="project-image" onclick="openModal('Images/project2_1.jpg')">
+              <img src="Images/i2.png" alt="Project 2 Image 2" class="project-image" onclick="openModal('Images/project2_2.jpg')">
+              <img src="Images/i3.png" alt="Project 2 Image 3" class="project-image" onclick="openModal('Images/project2_3.jpg')">
+              <img src="Images/i4.png" alt="Project 2 Image 4" class="project-image" onclick="openModal('Images/project2_4.jpg')">
+            </div>
+            <p><strong>Deployed Link:</strong> <a href="https://photo-gallery-three-sigma.vercel.app/" target="_blank">Photo Gallery</a></p>
+          </div>
+
+           
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Hemant Raghuwanshi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal for Image Enlargement -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="projects.js"></script>
+</body>
+</html>
